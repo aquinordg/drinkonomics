@@ -7,7 +7,6 @@ Aplicativo Android para calcular o custo-benefício de bebidas alcoólicas, comp
 - 50MB de espaço livre
 
 ## ⚙️ Instalação
-
 1. [Baixe](https://github.com/aquinordg/drinkonomics/releases/download/v1.0.0/app-release.apk) o arquivo APK mais recente
 2. No seu Android, vá em:
    - Configurações > Segurança > Fontes desconhecidas (permitir instalação de apps de fontes desconhecidas)
