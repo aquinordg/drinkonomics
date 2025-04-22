@@ -7,7 +7,7 @@ Já ficou na dúvida se vale mais a pena levar o chopp de 500ml ou o de 700ml? O
 - 50MB de espaço livre
 
 ## ⚙️ Instalação
-1. [Baixe](https://github.com/aquinordg/drinkonomics/releases/download/v1.0.0/app-release.apk) o arquivo APK mais recente
+1. [Baixe](https://github.com/aquinordg/drinkonomics/releases/download/v1.1.0/app-release.apk) o arquivo APK mais recente
 2. No seu Android, vá em:
    - Configurações > Segurança > Fontes desconhecidas (permitir instalação de apps de fontes desconhecidas)
 3. Abra o arquivo APK baixado e siga as instruções de instalação
