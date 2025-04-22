@@ -1,6 +1,21 @@
 # Drinkonomics 🍻
 
-Já ficou na dúvida se vale mais a pena levar o chopp de 500ml ou o de 700ml? Ou se o fardo de Coca de 220ml sai mais em conta que o de 350ml? E quando o assunto é bebida alcoólica, qual opção oferece o melhor custo-benefício: vodka, cerveja, cachaça ou whisky? Com o Drinkonomics, você nunca mais vai precisar quebrar a cabeça com essas contas. O app faz todo o trabalho duro para você: basta inserir o volume, o teor alcoólico e o preço da bebida, e ele calcula automaticamente as melhores opções, ranqueando onde você gasta menos e aproveita mais. Instale agora e aposte na sustentabilidade dos seus rolês.
+[![Release](https://img.shields.io/badge/version-1.1.0-brightgreen)](https://github.com/aquinordg/drinkonomics/releases)
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
+O aplicativo definitivo para comparar o custo-benefício de bebidas alcoólicas e não alcoólicas!
+
+## 📱 Sobre o App
+
+Já ficou na dúvida se vale mais a pena levar o chopp de 500ml ou o de 700ml? Ou se o fardo de Coca de 220ml sai mais em conta que o de 350ml? E quando o assunto é bebida alcoólica, qual opção oferece o melhor custo-benefício: vodka, cerveja, cachaça ou whisky?
+
+Com o Drinkonomics, você nunca mais vai precisar quebrar a cabeça com essas contas. O app faz todo o trabalho duro para você.
+
+**Novidades na versão 1.1.0:**
+- ✅ Suporte completo a bebidas não alcoólicas (0% de álcool)
+- 🔄 ScrollView para melhor navegação
+- 📊 Sistema de cálculo mais preciso
+- 🎨 Interface mais intuitiva
 
 ## 🔧 Requisitos
 - Android 8.0 (Oreo) ou superior
