@@ -22,10 +22,15 @@ Com o Drinkonomics, você nunca mais vai precisar quebrar a cabeça com essas co
 - 50MB de espaço livre
 
 ## ⚙️ Instalação
-1. [Baixe](https://github.com/aquinordg/drinkonomics/releases/download/v1.1.0/app-release.apk) o arquivo APK mais recente
-2. No seu Android, vá em:
-   - Configurações > Segurança > Fontes desconhecidas (permitir instalação de apps de fontes desconhecidas)
-3. Abra o arquivo APK baixado e siga as instruções de instalação
+1. Baixe o arquivo APK mais recente:
+   
+<a href="https://github.com/aquinordg/drinkonomics/releases/download/v1.1.0/app-release.apk">
+    <img src="https://img.shields.io/badge/Download-APK_v1.1.0-brightgreen?style=for-the-badge&logo=android" alt="Download APK">
+</a>
+
+2. No Android:
+   - `Configurações > Segurança > Fontes desconhecidas` (permitir)
+3. Instale o APK baixado
 
 ## 🛠 Funcionalidades
 - Comparação de até 10 bebidas diferentes
