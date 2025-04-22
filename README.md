@@ -1,6 +1,6 @@
 # Drinkonomics 🍻
 
-Aplicativo Android para calcular o custo-benefício de bebidas alcoólicas, comparando preço, volume e teor alcoólico.
+Já ficou na dúvida se vale mais a pena levar o chopp de 500ml ou o de 700ml? Ou se o fardo de Coca de 220ml sai mais em conta que o de 350ml? E quando o assunto é bebida alcoólica, qual opção oferece o melhor custo-benefício: vodka, cerveja, cachaça ou whisky? Com o Drinkonomics, você nunca mais vai precisar quebrar a cabeça com essas contas. O app faz todo o trabalho duro para você: basta inserir o volume, o teor alcoólico e o preço da bebida, e ele calcula automaticamente as melhores opções, ranqueando onde você gasta menos e aproveita mais. Instale agora e aposte na sustentabilidade dos seus rolês.
 
 ## 🔧 Requisitos
 - Android 8.0 (Oreo) ou superior
