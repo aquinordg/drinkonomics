@@ -11,7 +11,6 @@ import android.text.method.LinkMovementMethod
 import android.text.style.ClickableSpan
 import android.view.Gravity
 import android.view.View
-import android.view.ViewGroup
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
@@ -176,7 +175,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun calcularMelhorBebida(tvResultado: TextView) {
         try {
-            val bebidas = mutableListOf<Triple<String, Double, Double>>()
+            val bebidas = mutableListOf<BebidaCalculada>()
 
             for (i in 1..contadorBebidas) {
                 val (nome, volume, grau, preco) = if (i == 1) {
@@ -196,22 +195,26 @@ class MainActivity : AppCompatActivity() {
                     )
                 }
 
-                if (nome.isNotEmpty() && volume > 0 && grau > 0 && preco > 0) {
-                    bebidas.add(Triple(nome, (volume * grau / 100) / preco, preco))
+                if (nome.isNotEmpty() && volume > 0 && preco > 0) {
+                    val temAlcool = grau > 0
+                    val valorCalculado = if (temAlcool) (volume * grau / 100) / preco else volume / preco
+                    bebidas.add(BebidaCalculada(nome, valorCalculado, preco, temAlcool))
                 }
             }
 
             if (bebidas.isEmpty()) {
-                tvResultado.text = "Preencha os dados de pelo menos uma bebida."
+                tvResultado.text = "Preencha os dados de pelo menos uma bebida válida."
                 return
             }
 
-            val ranking = bebidas.sortedByDescending { it.second }
+            val ranking = bebidas.sortedByDescending { it.valorCalculado }
+            val temBebidasAlcoolicas = bebidas.any { it.temAlcool }
+
             val resultado = buildString {
                 append("🏆 MELHOR CUSTO-BENEFÍCIO:\n")
-                append("${ranking[0].first} - ${"%.2f".format(ranking[0].second)} ml álcool/real\n\n📊 RANKING:\n")
-                ranking.forEachIndexed { idx, (nome, eficiencia, preco) ->
-                    append("${idx + 1}. $nome: ${"%.2f".format(eficiencia)} ml/R\$ (R\$ ${"%.2f".format(preco)})\n")
+                append("${ranking[0].nome} - ${"%.2f".format(ranking[0].valorCalculado)} ${if (temBebidasAlcoolicas) "ml álcool/real" else "ml/real"}\n\n📊 RANKING:\n")
+                ranking.forEachIndexed { idx, bebida ->
+                    append("${idx + 1}. ${bebida.nome}: ${"%.2f".format(bebida.valorCalculado)} ${if (bebida.temAlcool) "ml/R\$ (álcool)" else "ml/R\$ (sem álcool)"} (R\$ ${"%.2f".format(bebida.preco)})\n")
                 }
             }
             tvResultado.text = resultado
@@ -242,4 +245,11 @@ data class Quadruple<out A, out B, out C, out D>(
     val second: B,
     val third: C,
     val fourth: D
+)
+
+data class BebidaCalculada(
+    val nome: String,
+    val valorCalculado: Double,
+    val preco: Double,
+    val temAlcool: Boolean
 )
